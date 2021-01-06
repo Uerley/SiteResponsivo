@@ -1,0 +1,394 @@
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #1c1c1c;
+}
+h1,h2,h3{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #000000;
+}
+.botao{
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #191970;
+    font-size: .9em;
+    border-radius: 3px;
+}
+/* Navegação */
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #191970;
+}
+nav>a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 800;
+    font-family: 'Courier New', Courier, monospace, serif;
+}
+nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;/*Três elementos platão*/
+    padding: 0;
+    width: 100%;/*Resposividade*/
+}
+nav ul li{
+    text-align: center;
+    width: 100%;
+
+}
+nav ul li a{
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* Cabeçalho */
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../img/camera.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+}
+header h1{
+    color: #FFFFFF;
+}
+header p{
+    margin-bottom: 2em;
+}
+#sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 10px 10px 20px;
+    background-color: #191970;
+    color: #FFFFFF;
+}
+#sobre h2{
+    color: #FFFFFF;
+}
+#sobre p{
+    margin-bottom: 2.5em;
+    max-width: 1000px;/*Quando tiver numa tela imersa o site não precisa esticar tanto*/
+}
+#sobre .botao{
+    background-color: #f1f1f1;
+    color: #1c1c1c;
+}
+/*Serviços*/
+#serviços{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+#serviços div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+/*Fotos*/
+#fotos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top:20px ;
+}
+#fotos h2{
+    margin-bottom: 20px;
+}
+#fotos img{
+    width: 100%;
+}
+/* Contato */
+#contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* padding: 20px; */
+}
+#contato h2{
+    color: #000000;
+}
+
+#contato form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+}
+
+button{
+    background-color: #E5E5E5;
+    background-image: linear-gradient(top, #FFF, #e5e5e5);
+    border-radius: 3px;
+    color: #000;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 1px solid #aaa;
+    cursor: pointer;
+}
+.hint {
+    background-color: rgb(196, 196, 4);
+    border: 1px solid #CCC;
+    box-shadow: 1px 1px 3px #EEE;
+    /* display: inline-block; */
+    /*tiramos o none para colocar isto*/
+    font-size: 0.8em;
+    border-radius: 3px;
+    padding: 3px;
+    opacity: 0;
+    /*Remove a opacidade do elemnto para enscoder*/
+    transition: opacity 0.5s, margin-left 0.5s;
+
+}
+
+#contato input:focus+.hint,
+textarea:focus+.hint {
+    /* e colocamos isto */
+    opacity: 1;
+    /* margin-left: 20px; */
+    /* display: inline-block; tiramos */
+}
+
+#contato button:hover {
+    background-color: #285582;
+    background-image: linear-gradient(top, #3775B3, #285582);
+    border-color: #204569;
+    color: #FFF;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.6);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 0 3px #3775B3;
+}
+
+#contato button:active {
+    background-color: #204569;
+    background-image: none;
+    border-color: #1A3754;
+    box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.15);
+}
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: #191970;
+    color: #FFFFFF;
+}
+footer a{
+    text-decoration: none;
+    color: #00FFFF;
+}
+ /* Sobre Nòs   */
+
+#sobrenos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    /* background-color: #483D8B; */
+}
+#sobrenos div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+#sobrenos img{
+    width: 85%;
+    border-radius: 30px;
+}
+
+#sobrenos p{
+    float: left;
+}
+
+/* Login */
+#login-container input:focus{
+    outline: none;
+}
+#login-container a,label{
+    font-size: .8rem;/*16 *.8=x Usuarios de dispositivos*/
+}
+/* conatiner login */
+#login-container{
+    background-color: white;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 30px;
+    margin-top: 10vh;
+    border-radius:10px ;
+    text-align: center;
+}
+
+#login-container form{
+    margin-top: 30px;
+    margin-bottom: 40px
+}
+#login-container label,input{
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+#login-container label{
+    font-weight: bold;
+}
+#login-container input{
+    border-bottom: 2px solid #323232;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+#login-container input:focus{
+    border-bottom: 2px solid #5F9EA0;
+}
+#esqueceu{
+    text-align: right;
+    display: block;
+}
+#login-container input[type="submit"]{
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 30px;
+    color: #fff;
+    background-color: #085588;
+    cursor: pointer;
+    width: 70px;
+    text-align: center;
+}
+#login-container input[type="submit"]:hover{
+    background-color: #1a6f7e;
+    transition: .5s;
+}
+#registrarcontainer {
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 30px;
+    color: #fff;
+    background-color: #085588;
+    cursor: pointer;
+}
+#registrarcontainer a{
+    color: white;
+    text-decoration: none;
+    background-position: center;
+    position: relative;
+    top: 25%;
+}
+
+@media screen and (min-width:768px){
+    nav{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    nav ul{
+        flex-direction: row;
+        width: 70%;
+    }
+    /* cabeçalho */
+    header{
+        height: 600px;
+        height: 60vh;
+        justify-content: center;
+    }
+    /* Sobre */
+    #sobre{
+        height: 250px;
+        height: 30vh;
+        justify-content: center;
+        min-width: 250px;
+    }
+    #serviços{
+        flex-direction: row;
+        flex-wrap: wrap/*Quebrar de linha*/;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    #serviços h2{
+        text-align: center;
+        width: 100%;
+    }
+    #serviços div{
+        flex-grow: 1;
+        flex-basis: 150px;
+        padding: 0 10px;
+    }
+    /* Fotos */
+    #fotos{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #fotos h2{
+        width: 100%;
+        text-align: center;
+    }
+    #fotos img{
+        width: 33.3333333%;
+    }
+    /* Contato */
+      
+    #contato{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    #contato h2,#contato p,#contato form{
+        width: 100%;
+    }
+    #contato input{
+        width: 180px;
+    }
+    
+    #sobrenos{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;
+      
+    }
+    #sobrenos h2,p{
+        text-align: center;
+        width: 100%;
+    }
+    #sobrenos div{
+        flex-grow: 1;
+        flex-basis: 150px;
+        padding: 0 10px;
+    }
+    #sobrenos img{
+        width: 85%;
+        /* max-width: 800px; */
+    }
+     
+}
